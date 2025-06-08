@@ -18,7 +18,7 @@ class PrevisaoController extends Controller
     {
         $cidade = $request->input('cidade');
 
-        $apiKey = '0347ffe0f367fd5390c7565c0e1342ae'; // Substitua pela sua chave de API do OpenWeatherMap
+        $apiKey = ''; // Substitua pela sua chave de API do OpenWeatherMap
         $url = "http://api.openweathermap.org/data/2.5/weather?q={$cidade}&units=metric&appid={$apiKey}&lang=pt_br";
 
         $response = Http::get($url);
